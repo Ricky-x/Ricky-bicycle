@@ -7,11 +7,16 @@ class OPDBS{
      * construct : be responsible for connect mysql
      */
     public function __construct(){
-        $host = 'localhost';
-        $user = 'root';
-        $password =  '';
-        $dbname = 'opdbs';
-        $port =  '3306';
+        //$host = 'localhost';
+       // $user = 'root';
+       // $password =  '';
+       // $dbname = 'opdbs';
+        //$port =  '3306';
+        $host = 'us-cdbr-east-06.cleardb.net';
+       $user = 'bae60f704ee2bd';
+       $password = 'f4b51efd';
+       $dbname = 'heroku_645364b49328db0';
+       $port =  '3306';
 
         $this->conn = mysqli_connect("$host:$port",$user,$password,$dbname) or die('mysql handle err');
     // var_dump($this->conn);die;
